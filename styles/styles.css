@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+body {
+  background-color: #ff564c;
+  margin: 0%;
+  font-family: "Secular One", sans-serif;
+}
+
+.central {
+  background-color: #ff564c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.central .reproductor {
+  width: 300px;
+  height: 550px;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.6), -9px -9px 16px rgba(0, 0, 0, 0.5);
+}
+.central .reproductor .reproductor2 {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.central .reproductor .barraB {
+  display: flex;
+  height: 15%;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  position: relative;
+}
+.central .reproductor .barraB .btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.central .reproductor .barraB .btn i {
+  width: 12px;
+  height: 12px;
+}
+.central .reproductor .barraB .btn i:hover {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: #ffff;
+}
+.central .reproductor .barraB .btn.btn--arriba {
+  display: flex;
+  justify-content: space-between;
+  transform: scale(0.8, 0.8);
+}
+.central .reproductor .barraB .btn.btn--arriba i {
+  color: #959595;
+}
+.central .reproductor .barraB .btn.btn--arriba i:hover {
+  color: #ffff;
+}
+.central .reproductor .barraB .btn.btn--medio {
+  min-height: 50px;
+  min-width: 50px;
+  transform: scale(1.3, 1.3);
+}
+.central .reproductor .barraB .btn.btn--medio i {
+  color: #ffff;
+}
+.central .reproductor .barraB .btn.btn--medio i.esconder {
+  display: none;
+}
+.central .reproductor .barraB .btn.btn--medio i:hover {
+  color: grey;
+}
+.central .reproductor .barraB .btn.btn--abajo {
+  min-width: 50px;
+  min-height: 50px;
+  transform: scale(0.7, 0.7);
+}
+.central .reproductor .barraB .btn.btn--abajo#corazon {
+  color: #ff564c;
+}
+.central .reproductor .barraB .btn.btn--abajo#corazon:hover {
+  color: #ffff;
+}
+.central .reproductor .barraB .btn.btn--abajo#replay {
+  color: #ff564c;
+}
+.central .reproductor .barraB .btn.btn--abajo#replay:hover {
+  color: #ffff;
+}
+.central .reproductor .barraB .btn.btn--abajo#shuffle {
+  color: #959595;
+}
+.central .reproductor .barraB .btn.btn--abajo#shuffle:hover {
+  color: #ffff;
+}
+.central .reproductor .barraB .btn.btn--abajo#opciones {
+  color: #959595;
+}
+.central .reproductor .barraB .btn.btn--abajo#opciones:hover {
+  color: #ffff;
+}
+.central .reproductor .portada {
+  width: 300px;
+  height: 550px;
+  align-self: flex-start;
+  z-index: 2;
+  position: absolute;
+}
+.central .reproductor .portada img {
+  width: 300px;
+  height: 300px;
+}
+.central .reproductor .texto {
+  width: 300px;
+  height: 50px;
+  padding-top: 90%;
+}
+.central .reproductor .texto .cancion {
+  font-size: 0.85em;
+  font-weight: lighter;
+  margin: 20px 0px 0px 0px;
+  color: #ffff;
+  text-align: center;
+}
+.central .reproductor .texto .artista {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.6em;
+  margin: 0;
+  color: #777777;
+}
+.central .reproductor .player__audio {
+  visibility: hidden;
+}
+
+@media (max-width: 375px) {
+  .central {
+    background-color: #111111;
+    width: 100vw;
+  }
+  .central .reproductor {
+    box-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <div class="central">
+        <div class="reproductor">
+            <div class="reproductor2">
+                <div class="barraB">
+                    <div id="barras" class="btn btn--arriba">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div id="busqueda" class="btn btn--arriba">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="portada">
+                <img src="./assets/cover.jpg" alt="" srcset="">
+            </div>
+            <div class="texto">
+                <h3 class="cancion">STRESSED OUT</h3>
+                <h4 class="artista">twenty one pilots - Blurryface</h4>
+            </div>
+            <audio class="player__audio" controls id="audio">
+                <source src="assets/Stressed Out.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="barraB">
+                <div id="atras" class="btn btn--medio">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div id="play" class="btn btn--medio">
+                    <div id="play">
+                        <i class="fas fa-play btn-play"></i>
+                        <i class="fas fa-pause btn-pausa esconder"></i>
+                    </div>
+                </div>
+                <div id="siguiente" class="btn btn--medio">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+            <div class="barraB">
+                <div id="corazon" class="btn btn--abajo">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div id="shuffle" class="btn btn--abajo">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div id="replay" class="btn btn--abajo">
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div id="opciones" class="btn btn--abajo">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
